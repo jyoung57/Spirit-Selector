@@ -1,15 +1,37 @@
 $darkblue: rgb(4, 4, 95);
 $light-text: rgba(255, 255, 255, 0.842);
+$purple: rgba(128, 0, 128, 0.863);
 
 h1 {
+  background-color: $darkblue;
   color: $light-text;
   font-size: 50px;
 }
 
+.opening {
+  display: flex;
+  justify-content: space-around;
+}
+
+h2 {
+  background-color: $purple;
+  color: $light-text;
+  font-size: 50px;
+  font-weight: 100px;
+}
+
 .countdown {
+  font-size: 50px;
+  font-weight: 100px;
+  color: $light-text;
   margin: 2 rem;
   padding: 1 rem 2 rem;
-  background-color: blueviolet;
+  background-color: $purple;
   border: solid white 5px;
   border-radius: 100 px;
+}
+
+footer{
+  text-align: center;
+  padding-top: 20%;
 }
