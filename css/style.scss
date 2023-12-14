@@ -1,0 +1,15 @@
+$darkblue: rgb(4, 4, 95);
+$light-text: rgba(255, 255, 255, 0.842);
+
+h1 {
+  color: $light-text;
+  font-size: 50px;
+}
+
+.countdown {
+  margin: 2 rem;
+  padding: 1 rem 2 rem;
+  background-color: blueviolet;
+  border: solid white 5px;
+  border-radius: 100 px;
+}
