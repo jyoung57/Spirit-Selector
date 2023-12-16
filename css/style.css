@@ -1,48 +1,57 @@
-.navigation {
-  display: flex;
-  background-color: rgb(4, 4, 95);
-  color: rgba(255, 255, 255, 0.842);
-}
-
-a:link {
-  text-decoration: none;
-}
-
 h1 {
   background-color: rgb(4, 4, 95);
   color: rgba(255, 255, 255, 0.842);
   font-size: 50px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* .background {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://unsplash.com/photos/person-holding-corona-extra-bottle-ER3epQ17GBQ);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration:30s ;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes animate {
+  0%{
+    background-image: url(https://unsplash.com/photos/four-glass-cups-on-white-surface-JjGLEN7T8xI);
+  }20%{
+    background-image: url(https://unsplash.com/photos/person-holding-clear-cocktail-glass-with-green-liquid-DylH5pnrBP8);
+  }40%{
+    background-image: url(https://unsplash.com/photos/green-ceramic-teacup-with-lemon-RYhNPglUSFw;
+  }60%{
+    background-image: url(https://unsplash.com/photos/a-glass-of-alcohol-with-a-slice-of-orange-_UX0SQ1DWds);
+  }80%{
+    background-image: url(https://unsplash.com/photos/a-couple-of-people-that-are-holding-some-drinks-Jtv-kTcayDw);
+  }100%{
+    background-image: url(https://unsplash.com/photos/two-glasses-filled-with-orange-juice-and-limes-1FDG58bFZM4);
+  }
+} */
+
 .opening {
   display: flex;
   justify-content: space-around;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-size: 50px;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.navigation ul {
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-  margin-top: 1%;
-  text-indent: 100px;
-  list-style-type: none;
-}
-
-h1 :hover {
-  color: red;
-}
-
-ul :hover {
-  color: red;
-}
-
-#nyeCountdown {
+h2 {
   background-color: rgba(128, 0, 128, 0.863);
   color: rgba(255, 255, 255, 0.842);
   font-size: 50px;
