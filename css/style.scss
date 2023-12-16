@@ -2,6 +2,7 @@ $darkblue: rgb(4, 4, 95);
 $light-text: rgba(255, 255, 255, 0.842);
 $purple: rgba(128, 0, 128, 0.863);
 
+
 .navigation {
   display: flex;
   background-color: $darkblue;
@@ -66,16 +67,3 @@ footer{
   padding-top: 20%;
 }
 
-// @keyframes example {
-//   0% {background-image: url(img/img1.jpg);}
-//   25% {background-image: url(img/img2.jpg);}
-//   50% {background-image: url(img/img3.jpg);}
-//   75% {background-image: url(img/img4.jpg);}
-//   100% {background-image: url(img/img5.jpg);}
-// }
-
-// body {
-//   animation-name: example;
-//   animation-duration: 6s;
-//   animation-iteration-count: infinite;
-// }
