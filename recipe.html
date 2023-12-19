@@ -27,14 +27,13 @@
     </header>
   <main>
       <div class="recipeForm">
-        <form onsubmit="">
-          <label for="">Enter the cocktail recipe that you want to see:</label>
+        <form onsubmit="handleGetRecipe(event)">
+          <label for="cocktail-input">Enter the cocktail recipe that you want to see:</label>
           <input type="text" name="cocktail" id="cocktail-input">
           <button type="submit">Submit</button>
         </form>
       </div>
      <div class="ingredients">
-         <center><p>Ingredients</p></center>
         <ul>
            <center><li id="ingredient1"></li></center>
           <center><li id="ingredient2"></li></center>
@@ -53,7 +52,9 @@
           <center><li id="ingredient15"></li></center>
         </ul>
       </div>
-      <div id="recipe"></div>
+      <div id="recipe">
+
+      </div>
   </main>
   <footer></footer>
     <script
