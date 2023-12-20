@@ -17,6 +17,7 @@ function handleGetRecipe(event) {
 
   const drinkData = data.drinks[0]
   $("#ingredients").append(`<h3>Ingredients for a ${drinkData.strDrink}</h3>`)
+  $('#directions').append(`<h4>How to make a ${drinkData.strDrink}</h4>`);
   $('#recipe').append(drinkData.strInstructions);
   
 
