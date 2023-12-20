@@ -14,18 +14,23 @@ function handleGetRecipe(event) {
     console.log(data.drinks[0].strInstructions);
 
   const drinkData = data.drinks[0]
-  $("#ingredients").append(`<h1>Ingredients for a ${drinkData.strDrink}</h1>`)
-  
-  $('#ingredientMeasurement1').append(drinkData.strMeasure1);
+  $("#ingredients").append(`<h3>Ingredients for a ${drinkData.strDrink}</h3>`)
   $('#recipe').append(drinkData.strInstructions);
+  
+  for (let j = 1; j <= 15; j++) {
+    const measurement = drinkData["strMeasure" + j];
+  }
+  
 
   for (let i = 1; i <= 15; i++) {
     const ingredient = drinkData["strIngredient" + i];
     if (ingredient) {
-      $("#ingredients").append(`<p>${ingredient}</p>`);
+      $("#ingredients").append(`<p>${ingredient} with a measurement of ${measurement}</p>`);
           }
         }
       }
     );
   }
   
+
+    // $('#ingredientMeasurement1').append(drinkData.strMeasure1);
