@@ -7,6 +7,8 @@ function handleGetRecipe(event) {
 
   const recipeName = event.target.cocktail.value;
   $('#recipe').html("");
+  $('#ingredients').html('');
+
 
 
   $.get(base_url + `/search.php?s=${recipeName}`, function (data) {
@@ -17,13 +19,10 @@ function handleGetRecipe(event) {
   $("#ingredients").append(`<h3>Ingredients for a ${drinkData.strDrink}</h3>`)
   $('#recipe').append(drinkData.strInstructions);
   
-  for (let j = 1; j <= 15; j++) {
-    const measurement = drinkData["strMeasure" + j];
-  }
-  
 
   for (let i = 1; i <= 15; i++) {
     const ingredient = drinkData["strIngredient" + i];
+    const measurement = drinkData['strMeasure' + i];
     if (ingredient) {
       $("#ingredients").append(`<p>${ingredient} with a measurement of ${measurement}</p>`);
           }
