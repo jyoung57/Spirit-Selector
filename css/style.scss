@@ -50,11 +50,8 @@ h1 {
   margin-top: 1%;
   text-indent: 100px;
   list-style-type: none;
+  font-weight: 1000;
   
-}
-
-.recipeBackground {
-  background-image: url();
 }
 
 h2 {
@@ -64,22 +61,22 @@ h2 {
   font-weight: 100px;
 }
 
-.ingredients p{
+h3 {
+  background-color: $darkblue;
+  color: $light-text;
+  font-size: 40px;
+  text-align: center;
+}
+
+#ingredients p {
   justify-content: space-evenly;
+  margin-left: 30%;
+  margin-right: 30%;
   font-size: 40px;
   margin-top: 1%;
   list-style-type: none;
   color: $light-text;
   text-indent: 30px;
-}
-
-.ingredients ul {
-  justify-content: space-evenly;
-  font-size: 30px;
-  margin-top: 1%;
-  list-style-type: none;
-  color: $light-text;
-  
 }
 
 #recipe {
@@ -91,16 +88,18 @@ h2 {
   padding-top: 8%;
   padding-bottom: 8%;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
   color: $darkblue
 }
 
 .recipeForm {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
   padding-top: 30px;
   padding-bottom: 50px;
   color: $light-text;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .countdown {
