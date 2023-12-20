@@ -25,3 +25,27 @@
         </ul>
       </div>
     </header>
+      <main>
+      <div class="recipeForm">
+        <form onsubmit="handleGetRecipeByIngredient(event)">
+          <label for="cocktail-input">Enter your ingredient:</label>
+          <input type="text" name="cocktail" id="cocktail-input" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+     <div id="drinkList">
+
+     </div>
+     <div id="drinkNames">
+
+     </div>
+  </main>
+  <footer></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous">
+    </script>
+    <script src="js/ingredient.js"></script>
+  </body>
+</html>
