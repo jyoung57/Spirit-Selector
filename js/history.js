@@ -14,7 +14,7 @@ function handleGetHistoryByIngredient(event) {
     console.log(data.ingredients[0].strDescription,"array test");
 
     const drinkData = data.ingredients[0].strDescription;
-    $('#drinkList').append(`<h3>Ingredient Information:</h3>`);  
+    $('#drinkList').append(`<h4>Ingredient Information:</h4>`);  
     $('#drinkNames').append(`<p>${drinkData}</p>`);
           
   });
