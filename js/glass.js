@@ -6,22 +6,21 @@ function handleGetCocktailByGlassType(event) {
   event.preventDefault();
 
   const glassName = event.target.cocktail.value;
-  $('#drinkList').html('');
-  $('#drinkNames').html('');
+  $('#drinkList, #drinkNames').html('');
 
-  $.get(base_url + `/filter.php?g=${glassName}`, function (data) {
-    console.log(data, 'url function');
-    console.log(data.drinks[0].strDrink, 'array test');
-
+  $.get(`${base_url}/filter.php?g=${glassName}`, function (data) {
     const drinkData = data.drinks;
-    const drinkName = data.drinks[0].strDrink;
-    $('#drinkList').append(`<h4>List of Drinks for a ${drinkName}:</h4>`);
 
-    for (let i = 0; i < drinkData.length; i++) {
-      const glass = drinkData[i];
-      if (glass) {
+    if (drinkData) {
+      $('#drinkList').append(`<h4>List of Drinks for a ${glassName}:</h4>`);
+
+      for (let i = 0; i < drinkData.length; i++) {
+        const drink = drinkData[i];
+        const drinkName = drink.strDrink;
         $('#drinkNames').append(`<p>${drinkName}</p>`);
       }
-    }    
+    } else {
+      $('#drinkList').append(`<p class="not-found">No drinks found for ${glassName}.</p>`);
+    }
   });
 }
