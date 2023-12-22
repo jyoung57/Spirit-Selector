@@ -9,13 +9,17 @@ function handleGetHistoryByIngredient(event) {
   $('#drinkList').html('');
   $('#drinkNames').html('');
 
-  $.get(base_url + `/search.php?i=${ingredientName}`, function (data) {
-    console.log(data,"url function");
-    console.log(data.ingredients[0].strDescription,"array test");
+  $.get(`${base_url}/search.php?i=${ingredientName}`, function (data) {
+    console.log(data, "url function");
 
-    const drinkData = data.ingredients[0].strDescription;
-    $('#drinkList').append(`<h4>Ingredient Information:</h4>`);  
-    $('#drinkNames').append(`<p>${drinkData}</p>`);
-          
+    const ingredients = data.ingredients;
+
+    if (ingredients && ingredients.length > 0) {
+      const drinkData = ingredients[0].strDescription;
+      $('#drinkList').append(`<h4>Ingredient Information:</h4>`);
+      $('#drinkNames').append(`<p>${drinkData}</p>`);
+    } else {
+      $('#drinkList').append(`<p>No information found for ${ingredientName}.</p>`);
+    }
   });
 }
