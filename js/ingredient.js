@@ -6,25 +6,22 @@ function handleGetRecipeByIngredient(event) {
   event.preventDefault();
 
   const ingredientName = event.target.cocktail.value;
-  $('#drinkList').html('');
-  $('#drinkNames').html('');
+  $('#drinkList, #drinkNames').html('');
 
-  $.get(base_url + `/filter.php?i=${ingredientName}`, function (data) {
-    console.log(data);
-    console.log(data.drinks[0].strDrink);
-
+  $.get(`${base_url}/filter.php?i=${ingredientName}`, function (data) {
     const drinkData = data.drinks;
-    $('#drinkList').append(
-      `<h3>List of Drinks:</h3>`
-    );
-    
-    for (let i = 0; i < drinkData.length; i++) {
-      const drink = drinkData[i];      
-      if (drink) {
-        $('#drinkNames').append(
-          `<p>${drink.strDrink}</p>`
-        );
-      }
+
+    if (drinkData) {
+      drinkData.forEach((drink) => {
+        if (drink) {
+          $('#drinkNames').append(`<p>${drink.strDrink}</p>`);
+        }
+      });
+    } else {
+      $('#drinkList').append(
+        `<p class="not-found">No drinks found with ${ingredientName}.</p>`
+      );
     }
   });
 }
+
