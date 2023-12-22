@@ -31,6 +31,3 @@ function handleGetRecipe(event) {
       }
     );
   }
-  
-
-    // $('#ingredientMeasurement1').append(drinkData.strMeasure1);
