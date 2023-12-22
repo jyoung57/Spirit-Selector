@@ -25,3 +25,20 @@ At Spirit Selector, we are dedicated to bringing your cocktail creations to vibr
 - Check out the "drinks by glass type" page to find the ideal glass for your drinks.
 - Explore the "drink history" section to learn more about the origin and evolution of beverages.
 - Use the "ingredient search" feature to discover drinks based on your preferred ingredients.
+
+## Credits
+
+- https://unsplash.com for providing images to build this site.
+
+## Acknolwedgements
+
+- Thomas Basham assisted me with several of the coding efforts and assisted with a few optional ideas as well.
+- Dwight Lindquist provided feedback on errors and assisted with JavaScript adjustments along the way.
+
+## Contributing
+
+We welcome contributions to enhance the Spirit Selector experience. Feel free to submit bug reports, feature requests, or even your own favorite recipes.
+
+## License
+
+This project is licensed under the MIT License.
