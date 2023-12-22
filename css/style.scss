@@ -1,5 +1,4 @@
 $darkblue: rgb(4, 4, 95);
-
 $light-text: rgba(255, 255, 255, 0.842);
 $purple: rgba(128, 0, 128, 0.863);
 $lightgreen: rgb(130, 245, 130);
@@ -36,7 +35,15 @@ $lightgreen: rgb(130, 245, 130);
 
 #glassBackground {
   background-image: url(../img/img1.jpg);
-  background-size: contain;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+#aboutBackground {
+  background-image: url(../img/img9.avif);
+  background-size: cover;
   max-width: 100%;
   max-height: 100%;
 
@@ -63,6 +70,18 @@ h1 {
   padding-top: 2%;
   font-family: Arial, Helvetica, sans-serif;
   color: $darkblue;
+}
+
+.closing {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 40px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 8%;
+  padding-top: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(248, 7, 7);
 }
 
 .navigation ul {
